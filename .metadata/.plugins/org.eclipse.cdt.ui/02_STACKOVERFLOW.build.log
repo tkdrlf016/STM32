@@ -1,0 +1,10 @@
+20:41:28 **** Incremental Build of configuration Debug for project 02_STACKOVERFLOW ****
+make -j8 all 
+arm-none-eabi-size   02_STACKOVERFLOW.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18252	    124	  18676	  37052	   90bc	02_STACKOVERFLOW.elf
+Finished building: default.size.stdout
+ 
+
+20:41:29 Build Finished. 0 errors, 0 warnings. (took 730ms)
+

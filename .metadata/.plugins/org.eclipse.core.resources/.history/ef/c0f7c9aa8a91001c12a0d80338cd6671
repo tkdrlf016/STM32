@@ -1,0 +1,19 @@
+/*
+ * PWM_Example.c
+ *
+ *  Created on: Feb 19, 2022
+ *      Author: kimsanggil
+ */
+#include "PWM_Example.h"
+
+void Check_LED_Example(){
+	HAL_Delay(10);
+	htim1.Instance->CCR1 = duty;
+	duty++;
+	if(duty == 500)
+	{
+		duty = 0;
+	}
+
+
+}

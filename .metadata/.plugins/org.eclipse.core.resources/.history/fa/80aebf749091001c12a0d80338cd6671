@@ -1,0 +1,17 @@
+/*
+ * PWM_Example.c
+ *
+ *  Created on: Feb 19, 2022
+ *      Author: kimsanggil
+ */
+#include "PWM_Example.h"
+
+void Check_LED_Example(TIM_HandleTypeDef * htim){
+	HAL_Delay(10);
+	htim->Instance->CCR4 = duty;
+	duty++;
+	if(duty == 500)
+	{
+		duty = 0;
+	}
+}

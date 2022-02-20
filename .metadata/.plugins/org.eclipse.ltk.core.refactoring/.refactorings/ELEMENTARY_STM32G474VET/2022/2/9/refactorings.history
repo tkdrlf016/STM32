@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;ELEMENTARY_STM32G474VET/Core/Inc/GPIO.h\&apos; to &apos;GPIO.h&apos;" description="Rename resource &apos;GPIO.h\&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/GPIO.h\" name="GPIO.h" stamp="1645343493062" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;ELEMENTARY_STM32G474VET/Core/Src/asd.c&apos; to &apos;PWM_Example.c&apos;" description="Rename resource &apos;asd.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/asd.c" name="PWM_Example.c" stamp="1645346294114" updateReferences="true"/>
+</session>

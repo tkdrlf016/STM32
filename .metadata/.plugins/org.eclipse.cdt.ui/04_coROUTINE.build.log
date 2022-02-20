@@ -1,0 +1,10 @@
+20:41:30 **** Incremental Build of configuration Debug for project 04_coROUTINE ****
+make -j8 all 
+arm-none-eabi-size   04_coROUTINE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17636	    124	  18764	  36524	   8eac	04_coROUTINE.elf
+Finished building: default.size.stdout
+ 
+
+20:41:31 Build Finished. 0 errors, 0 warnings. (took 739ms)
+

@@ -1,0 +1,20 @@
+16:40:19 **** Incremental Build of configuration Debug for project ELEMENTARY_STM32F107VCT ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F107xC -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ELEMENTARY_STM32F107VCT.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/kimsanggil/STM32CubeIDE/workspace_1.6.1/ELEMENTARY_STM32F107VCT/STM32F107VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ELEMENTARY_STM32F107VCT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ELEMENTARY_STM32F107VCT.elf
+ 
+arm-none-eabi-objdump -h -S  ELEMENTARY_STM32F107VCT.elf  > "ELEMENTARY_STM32F107VCT.list"
+arm-none-eabi-objcopy  -O binary  ELEMENTARY_STM32F107VCT.elf  "ELEMENTARY_STM32F107VCT.bin"
+arm-none-eabi-size   ELEMENTARY_STM32F107VCT.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11016	     20	   1788	  12824	   3218	ELEMENTARY_STM32F107VCT.elf
+Finished building: default.size.stdout
+ 
+Finished building: ELEMENTARY_STM32F107VCT.bin
+ 
+Finished building: ELEMENTARY_STM32F107VCT.list
+ 
+
+16:40:20 Build Finished. 0 errors, 0 warnings. (took 1s.30ms)
+

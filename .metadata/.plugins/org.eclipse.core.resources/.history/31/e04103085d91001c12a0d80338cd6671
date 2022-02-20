@@ -1,0 +1,15 @@
+/*
+ * GPIO.h
+ *
+ *  Created on: Feb 19, 2022
+ *      Author: kimsanggil
+ */
+
+#ifndef INC_GPIO_H_
+#define INC_GPIO_H_
+#inlcude "main"
+
+void gpio_test();
+
+
+#endif /* INC_GPIO_H_ */

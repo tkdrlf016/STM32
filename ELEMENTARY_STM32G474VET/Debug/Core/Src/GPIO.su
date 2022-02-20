@@ -1,0 +1,2 @@
+GPIO.c:9:6:HAL_GPIO_Write	8	static
+GPIO.c:31:6:HAL_GPIO_Read	8	static

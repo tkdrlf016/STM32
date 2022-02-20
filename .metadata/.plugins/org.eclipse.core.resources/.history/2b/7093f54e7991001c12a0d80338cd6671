@@ -1,0 +1,17 @@
+/*
+ * Timer.h
+ *
+ *  Created on: Feb 19, 2022
+ *      Author: kimsanggil
+ */
+
+#ifndef INC_TIMER_H_
+#define INC_TIMER_H_
+
+int timer1_count;
+int timer2_count;
+
+TIM_HandleTypeDef htim1;
+TIM_HandleTypeDef htim2;
+
+#endif /* INC_TIMER_H_ */

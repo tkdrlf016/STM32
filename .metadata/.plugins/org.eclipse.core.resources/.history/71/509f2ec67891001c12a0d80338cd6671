@@ -1,0 +1,30 @@
+/*
+ * Timer.c
+ *
+ *  Created on: Feb 19, 2022
+ *      Author: kimsanggil
+ */
+
+#include "Timer.h"
+
+ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	 if(htim->Instance == TIM1)
+	 {
+		 CanTxHeader.StdId =0x001;
+		 CanTxHeader.RTR = CAN_RTR_DATA;
+		 CanTxHeader.IDE = CAN_ID_STD;
+		 CanTxHeader.DLC = 8;
+		 CanTxMailbox = HAL_CAN_GetTxMailboxesFreeLevel(&hcan2);
+		 HAL_CAN_AddTxMessage(&hcan2, &CanTxHeader, &cantxdata[0], &CanTxMailbox);
+	 }
+	 if(htim->Instance == TIM2)
+	 {
+		 CanTxHeader.StdId =0x001;
+		 CanTxHeader.RTR = CAN_RTR_DATA;
+		 CanTxHeader.IDE = CAN_ID_STD;
+		 CanTxHeader.DLC = 8;
+		 CanTxMailbox = HAL_CAN_GetTxMailboxesFreeLevel(&hcan2);
+		 HAL_CAN_AddTxMessage(&hcan2, &CanTxHeader, &cantxdata[0], &CanTxMailbox);
+	 }
+}

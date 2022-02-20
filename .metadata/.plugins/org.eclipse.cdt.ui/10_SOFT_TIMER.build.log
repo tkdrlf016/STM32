@@ -1,0 +1,10 @@
+20:41:35 **** Incremental Build of configuration Debug for project 10_SOFT_TIMER ****
+make -j8 all 
+arm-none-eabi-size   10_SOFT_TIMER.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21916	    124	  18764	  40804	   9f64	10_SOFT_TIMER.elf
+Finished building: default.size.stdout
+ 
+
+20:41:36 Build Finished. 0 errors, 0 warnings. (took 728ms)
+

@@ -1,0 +1,10 @@
+21:01:16 **** Incremental Build of configuration Debug for project 01_TASKMAN ****
+make -j8 all 
+arm-none-eabi-size   01_TASKMAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17596	    124	  18676	  36396	   8e2c	01_TASKMAN.elf
+Finished building: default.size.stdout
+ 
+
+21:01:17 Build Finished. 0 errors, 0 warnings. (took 734ms)
+
